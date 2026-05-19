@@ -1,12 +1,12 @@
 ![Image](./preview.jpg)
 
-# Frontend Mentor - Bento Grid
+# Frontend Mentor - Interactive Rating Component
 
-[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-Bento%20Grid-2ec866?style=flat-square&logo=frontendmentor)](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-Interactive%20Rating%20Component-2ec866?style=flat-square&logo=frontendmentor)](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
 ## Table of Contents
 
-- [Frontend Mentor - Bento Grid](#frontend-mentor---bento-grid)
+- [Frontend Mentor - Interactive Rating Component](#frontend-mentor---interactive-rating-component)
 	- [Table of Contents](#table-of-contents)
 	- [Overview](#overview)
 		- [Live Demo](#live-demo)
@@ -21,7 +21,7 @@
 
 ## Overview
 
-I'm back to studying programming and I've started with the good old HTML and CSS. After finishing the course I'm tackling some [Frontend Mentor](https://www.frontendmentor.io) challenges to put into practice everything I've learned as I continue my studies. It's also a great way to keep improving - while not forgetting everything I've learned - as I continue to learn new things.
+I'm back to studying programming and I've started with the good old HTML and CSS, now I'm relearning JavaScript and TypeScript. After finishing the course I'm tackling some [Frontend Mentor](https://www.frontendmentor.io) challenges to put into practice everything I've learned as I continue my studies. It's also a great way to keep improving - while not forgetting everything I've learned - as I continue to learn new things.
 
 ### Live Demo
 
@@ -35,7 +35,7 @@ The challenges are pretty straight forward, you have to replicate the page or el
 
 ### The Challenge
 
-- [Bento Grid](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj)
+- [Interactive Rating Component](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
 Use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 

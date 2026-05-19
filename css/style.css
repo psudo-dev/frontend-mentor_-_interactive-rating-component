@@ -1,0 +1,75 @@
+:root {
+	--orange-500: hsl(25, 97%, 53%);
+	--white: hsl(0, 100%, 100%);
+	--grey-500: hsl(217, 12%, 63%);
+	--grey-900: hsl(213, 19%, 18%);
+	--grey-950: hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	min-height: 100dvh;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.1;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	background: var(--grey-950);
+}
