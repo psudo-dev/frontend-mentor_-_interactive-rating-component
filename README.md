@@ -64,6 +64,9 @@ Since this is one of the most used CSS naming schemes, I've decided to learn it 
     - Flexbox
     - Grid
     - BEM - Block Element Modifier
+- Typescript
+- Vite
+- Bun
 
 ## Author
 
