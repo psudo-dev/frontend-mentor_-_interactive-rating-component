@@ -61,6 +61,8 @@ I also made in a way that when the user selects a rating, the numbers become fil
 
 I've been focusing on learning more about accessibility and semantic HTML, so I can better understand how to structure my pages and make them more accessible to all users. By each project I'm learning a bit more and hopefully through practice it will become a bit more intuitive to me.
 
+In this project, I used a `fieldset` and `legend` to group the rating options together, which is a good practice for accessibility. I also made sure to use radio inputs for the rating options, which is the most appropriate input type for this kind of selection. I also made sure to use labels for each radio input, so that screen readers can properly announce the options to users.
+
 ### BEM - Block Element Modifier
 
 Since this is one of the most used CSS naming schemes, I've decided to learn it and apply it to my projects. I'm still getting used to it, I find it a bit verbose, and not as intuitive as I've would have liked, but I can see the benefits of it, even more for bigger projects.
