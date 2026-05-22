@@ -7,33 +7,6 @@ const thanksCard = document.querySelector(".thanks-card");
 const cardInner = document.querySelector(".card-container__inner");
 const thanksTitle = document.querySelector(".thanks-card__title");
 
-// submitButton?.addEventListener("click", () => {
-// 	const activeRating =
-// 		document.querySelector<HTMLLIElement>(".active")?.textContent;
-// 	if (thanksMessage instanceof HTMLSpanElement)
-// 		thanksMessage.innerText = `You selected ${activeRating} out of 5`;
-
-// 	// The animation that I manually made with basic tools like setTimeout sync'd with rotateY in the CSS file
-// 	// if (
-// 	// 	ratingCard instanceof HTMLElement &&
-// 	// 	thanksCard instanceof HTMLElement
-// 	// ) {
-// 	// 	ratingCard.classList.add("rotate-rating");
-// 	// 	setTimeout(() => {
-// 	// 		ratingCard.innerHTML = "";
-// 	// 	}, 125);
-// 	// 	setTimeout(() => {
-// 	// 		ratingCard.classList.add("is-hidden");
-// 	// 		thanksCard.classList.remove("is-hidden");
-// 	// 		thanksCard.classList.add("rotate-thanks");
-// 	// 	}, 125);
-// 	// }
-// 	const cardInner = document.querySelector(".card-inner");
-// 	if (cardInner instanceof HTMLElement) {
-// 		cardInner.classList.add("is-flipped");
-// 	}
-// });
-
 let lastCheckedInput: HTMLInputElement | null = null;
 
 radioInputs.forEach((input) => {
@@ -88,3 +61,30 @@ thanksCard?.addEventListener("click", () => {
 		cardInner.classList.add("de-flipped");
 	}
 });
+
+// submitButton?.addEventListener("click", () => {
+// 	const activeRating =
+// 		document.querySelector<HTMLLIElement>(".active")?.textContent;
+// 	if (thanksMessage instanceof HTMLSpanElement)
+// 		thanksMessage.innerText = `You selected ${activeRating} out of 5`;
+
+// 	// The animation that I manually made with basic tools like setTimeout sync'd with rotateY in the CSS file
+// 	// if (
+// 	// 	ratingCard instanceof HTMLElement &&
+// 	// 	thanksCard instanceof HTMLElement
+// 	// ) {
+// 	// 	ratingCard.classList.add("rotate-rating");
+// 	// 	setTimeout(() => {
+// 	// 		ratingCard.innerHTML = "";
+// 	// 	}, 125);
+// 	// 	setTimeout(() => {
+// 	// 		ratingCard.classList.add("is-hidden");
+// 	// 		thanksCard.classList.remove("is-hidden");
+// 	// 		thanksCard.classList.add("rotate-thanks");
+// 	// 	}, 125);
+// 	// }
+// 	const cardInner = document.querySelector(".card-inner");
+// 	if (cardInner instanceof HTMLElement) {
+// 		cardInner.classList.add("is-flipped");
+// 	}
+// });
