@@ -1,10 +1,11 @@
 :root {
 	--orange-500: hsl(25, 97%, 53%);
 	--white: hsl(0, 100%, 100%);
-	--bg-subtle: rgba(255, 255, 255, 0.05);
+	--bg-subtle: rgba(255, 255, 255, 0.04);
 	--grey-500: hsl(217, 12%, 63%);
-	--grey-900: hsl(213, 19%, 18%);
-	--grey-950: hsl(216, 12%, 8%);
+	--grey-950: hsl(225, 9%, 9%);
+	--card-grad-start: hsl(213, 19%, 18%);
+	--card-grad-end: hsl(214, 23%, 12%);
 }
 
 *,
@@ -118,10 +119,14 @@ button:focus {
 
 .rating-card,
 .thanks-card {
-	background: var(--grey-900);
+	background: radial-gradient(
+		circle at top,
+		var(--card-grad-start),
+		var(--card-grad-end)
+	);
 	max-width: 420px;
 	height: clamp(375px, calc(295px + 25vw), 420px);
-	border-radius: 12px;
+	border-radius: 32px;
 	display: grid;
 	padding: clamp(1.5rem, calc(0.611rem + 4.444vw), 2rem)
 		clamp(1.5rem, calc(0.611rem + 4.444vw), 2rem);
