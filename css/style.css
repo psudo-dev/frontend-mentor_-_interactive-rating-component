@@ -97,6 +97,18 @@ body {
 	}
 }
 
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
 .card-container {
 	height: 98vh;
 	display: grid;
@@ -151,13 +163,26 @@ body {
 	color: var(--grey-500);
 }
 
-.rating-card__rating-list {
-	display: flex;
-	justify-content: space-between;
+.rating-card__fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	min-width: 0;
 }
 
-.rating-card__rating-item {
-	display: inline-flex;
+.rating-card__list {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+.rating-card__item {
+	display: block;
+}
+
+.rating-card__label {
+	position: relative;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
@@ -169,11 +194,47 @@ body {
 	background: rgba(255, 255, 255, 0.05);
 	font-weight: 700;
 	transition: all 0.2s ease;
+	cursor: pointer;
 }
 
-.rating-card__rating-item:hover {
+.rating-card__label:hover {
 	background: var(--orange-500);
 	color: var(--grey-950);
+}
+
+.rating-card__input:checked + .rating-card__label {
+	background: var(--white);
+	color: var(--grey-950);
+}
+
+.rating-card__input:focus-visible + .rating-card__label {
+	outline: 2px solid var(--orange-500);
+	outline-offset: 3px;
+}
+
+.rating-card__input:checked + .rating-card__label,
+.rating-card__item:has(.rating-card__input:checked)
+	~ .rating-card__item
+	.rating-card__label {
+	background: var(--white);
+	font-size: 0;
+}
+
+.rating-card__input:checked + .rating-card__label::before,
+.rating-card__item:has(.rating-card__input:checked)
+	~ .rating-card__item
+	.rating-card__label::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 17px;
+	height: 16px;
+	background-image: url("../images/icon-star.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .rating-card__button {
@@ -187,6 +248,11 @@ body {
 	font-weight: 700;
 	letter-spacing: 0.125em;
 	transition: all 0.2s ease;
+}
+
+.rating-card__button:focus-visible {
+	outline: 2px solid var(--white);
+	outline-offset: 3px;
 }
 
 .rating-card__button:hover {
@@ -256,7 +322,7 @@ The animation that I manually made with basic tools like rotateY sync'd with set
 	}
 } */
 
-.card-inner {
+.card-container__inner {
 	position: relative;
 	width: 100%;
 	max-width: 420px;
@@ -266,18 +332,22 @@ The animation that I manually made with basic tools like rotateY sync'd with set
 	transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-inner.is-flipped {
+.card-container__inner.is-flipped {
 	transform: rotateY(180deg);
 }
 
-.card-face {
+.card-container__inner.de-flipped {
+	transform: rotateY(0deg);
+}
+
+.card-container__face {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .rating-card {
