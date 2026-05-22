@@ -4,30 +4,14 @@
 
 [![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-Interactive%20Rating%20Component-2ec866?style=flat-square&logo=frontendmentor)](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
-## Table of Contents
-
-- [Frontend Mentor - Interactive Rating Component](#frontend-mentor---interactive-rating-component)
-	- [Table of Contents](#table-of-contents)
-	- [Overview](#overview)
-		- [Live Demo](#live-demo)
-	- [Frontend Mentor](#frontend-mentor)
-		- [The Challenge](#the-challenge)
-	- [Commentary](#commentary)
-		- [Features](#features)
-		- [Accessibilty and Semantic HTML](#accessibilty-and-semantic-html)
-		- [BEM - Block Element Modifier](#bem---block-element-modifier)
-		- [TypeScript, Vite and Bun](#typescript-vite-and-bun)
-	- [Built Using](#built-using)
-	- [Author](#author)
-	- [License](#license)
-
 ## Overview
 
 I'm back to studying programming and I've started with the good old HTML and CSS, now I'm relearning JavaScript and TypeScript. After finishing the course I'm tackling some [Frontend Mentor](https://www.frontendmentor.io) challenges to put into practice everything I've learned as I continue my studies. It's also a great way to keep improving - while not forgetting everything I've learned - as I continue to learn new things.
 
 ### Live Demo
 
-- [Live Demo](https://cyber-layout-zen.netlify.app)
+- [Live Demo](https://gasket-bamboo-flair.netlify.app)
+- [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-ULxFOLNZtt)
 
 ## Frontend Mentor
 
@@ -39,17 +23,13 @@ The challenges are pretty straight forward, you have to replicate the page or el
 
 - [Interactive Rating Component](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
-Use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
 Your users should be able to:
 
 - View the optimal layout for the section depending on their device's screen size
 
-Want some support on the challenge? [Join the Frontend Mentor community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+## What I've Learned
 
-## Commentary
-
-### Features
+### 3D Card Flip Animation
 
 Since this is a pretty simple project, I've decided to add a bit of interactivity to it, so I can try new things and learn from it. The main feature is that when the user submits the form, the rating card will flip and show the thanks card, with the rating that the user selected.
 
@@ -57,32 +37,23 @@ I initially made the animation using a mix of `setTimeout` and `translateY` with
 
 I also made in a way that when the user selects a rating, the numbers become filled with starts, which is a nice visual feedback for the user, and also makes it more clear which rating they have selected.
 
-### Accessibilty and Semantic HTML
+### Accessibility and Semantic HTML
 
-I've been focusing on learning more about accessibility and semantic HTML, so I can better understand how to structure my pages and make them more accessible to all users. By each project I'm learning a bit more and hopefully through practice it will become a bit more intuitive to me.
+To ensure proper validation, 100% of the visible content is wrapped inside appropriate HTML5 landmark elements, and the form structure uses proper semantic nodes for selection:
 
-In this project, I used a `fieldset` and `legend` to group the rating options together, which is a good practice for accessibility. I also made sure to use radio inputs for the rating options, which is the most appropriate input type for this kind of selection. I also made sure to use labels for each radio input, so that screen readers can properly announce the options to users.
+- Form Structure: Wrapped the rating options within a and for native screen reader support.
+- Radio Inputs: Each rating option is implemented as a radio input, allowing users to select only one rating at a time, with clear labels for screen readers.
 
-### BEM - Block Element Modifier
+### Architecture and Tooling
 
-Since this is one of the most used CSS naming schemes, I've decided to learn it and apply it to my projects. I'm still getting used to it, I find it a bit verbose, and not as intuitive as I've would have liked, but I can see the benefits of it, even more for bigger projects.
+- TypeScript: Adopted to enforce type safety, cleaner logic separation, and robust IDE autocompletion.
+- BEM (Block Element Modifier): Applied to build predictable and modular stylesheets.
 
-### TypeScript, Vite and Bun
+## Built With
 
-From this project on, I'm probably going to start using exclusively TypeScript. Philosophically speaking, I prefer TypeScript over the little mess that JavaScript can become, plus the extra autocompletion and type checking is a nice bonus. I'm also using Vite as my build tool, which is pretty fast and easy to use, and Bun as my package manager, which is also pretty fast and has a nice API.
-
-## Built Using
-
-- HTML
-    - Semantic HTML
-    - Accessibility
-- CSS
-    - Flexbox
-    - Grid
-    - BEM - Block Element Modifier
-- Typescript
-- Vite
-- Bun
+- Markup: HTML5, Semantic Elements
+- Styling: CSS3 (Grid, Flexbox, Fluid Typography using clamp()), BEM Architecture
+- Logic & Tooling: TypeScript, Vite, Bun
 
 ## Author
 
