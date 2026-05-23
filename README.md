@@ -52,7 +52,7 @@ To ensure proper validation, 100% of the visible content is wrapped inside appro
 ## Built With
 
 - Markup: HTML5, Semantic Elements
-- Styling: CSS3 (Grid, Flexbox, Fluid Typography using clamp()), BEM Architecture
+- Styling: CSS3 (Grid, Flexbox, Fluid Spacing using clamp()), BEM Architecture
 - Logic & Tooling: TypeScript, Vite, Bun
 
 ## Author
